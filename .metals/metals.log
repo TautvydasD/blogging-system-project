@@ -1,0 +1,4 @@
+2020.06.07 17:13:53 INFO  started: Metals version 0.9.0 in workspace 'D:\Studies\6 Semestras\Interaktyvios interneto technologijos\todayilearned'
+2020.06.07 17:13:54 INFO  time: initialize in 0.8s
+2020.06.07 17:13:56 WARN  no build tool detected in workspace 'D:\Studies\6 Semestras\Interaktyvios interneto technologijos\todayilearned'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.06.07 17:58:27 INFO  shutting down Metals

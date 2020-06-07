@@ -1,0 +1,78 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="row">
+        <div class="col offset-lg3 offset-md-3 col-sm-12 col-md-6">
+            <div class="card loginbox">
+                <div class=" container">
+                    <div class="col">
+                        <h3 class="text-center">Login</h3>
+                    </div>
+                    {% if true %}
+                        <div class="alert alert-danger">
+                            Error
+                        </div>
+                    {% endif %}
+                    <div>
+                        <label for="email">Email</label>
+                    </div>
+                    <div>
+                        <input>
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                    </div>
+                    <div>
+                        <input >
+                    </div>
+
+                    <div>
+                        <a href="{{ path('app_login_resetpassword') }}">Forgot Password</a>
+                    </div>
+
+
+                    <div class="align-content-center">
+                        <a class="btn btn-dark" href="{{ path('app_login_registershow') }}">Register</a>
+                        <a class="btn btn-dark" href="">Login</a>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+{#        <div class="col s12 m6 offset-m3 l6 offset-l3 l6">#}
+{#            <div class="card blue-grey darken-1">#}
+{#                <div class="card-content white-text">#}
+{#                    <span class="card-title center-align">login{{ 'login.title'|trans }}</span>#}
+{#                    <hr/><br/>#}
+{#                    {% if error %}#}
+{#                        <div class="card-panel red lighten-3">#}
+{#                            {{ error.messageKey|trans(error.messageData, 'security') }}#}
+{#                        </div>#}
+{#                    {% endif %}#}
+{#                    <div class="row">#}
+{#                        <form class="col s12" action="{{ path('login') }}" method="post" id="login_form">#}
+{#                            <div class="row">#}
+{#                                <div class="input-field col s12">#}
+{#                                    <input type="email" id="email" name="_email" value="{{ last_username }}" class="validate">#}
+{#                                    <label for="email">{{'login.email'|trans}}</label>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div class="row">#}
+{#                                <div class="input-field col s12">#}
+{#                                    <input type="password" id="password" name="_password" class="validate">#}
+{#                                    <label for="password">{{'login.password'|trans}}</label>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </form>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="card-action right-align">#}
+{#                    <a href="{{ path('forgot_password', {'email': last_username}) }}">{{ 'login.forgot_password'|trans }}</a>#}
+{#                    <a href="#" id="submit-btn">{{ 'login.submit'|trans }}</a>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+    </div>
+{% endblock %}
